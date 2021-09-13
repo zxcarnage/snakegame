@@ -70,7 +70,8 @@ public class Snake : MonoBehaviour
     private void FixedUpdate()
     {
         tale = segments.Count;
-        if(segments.Count != 1) { 
+        if(segments.Count != 1) 
+        { 
             segments[tale - 1].transform.localScale = new Vector3(0.85f, 0.4f, 0.0f);
             segments[0].transform.localScale = new Vector3(1, 1, 1);
             segments[tale-2].transform.localScale = new Vector3(0.75f, 0.75f, 0.0f);
